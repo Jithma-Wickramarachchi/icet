@@ -1,57 +1,10 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<title>PROJECT MANAGEMENT AND CONSULTANCY</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-	<!-- Bootstrap CSS v5.2.1 -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-	<script src="https://kit.fontawesome.com/61d60b83f4.js" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" href="./assets/css/style.css">
-
-</head>
-
+<?php
+ include_once './header.php';
+?>
 <body>
-	<header>
-		<div class="container-fluid">
-			<div class="row" style="background-color: #233857;">
-				<div class="col-md-12 py-2 text-light d-inline">
-					<div class="px-3 text-start d-inline"><i class="fa-solid fa-phone fa-xs me-2"></i><a class="text-light" style="text-decoration: none;" href="tel:+97582818259">+97582818259</a></div>
-					<div class="px-3 float-end d-inline"><i class="fa-brands fa-youtube fa-xs me-2"></i><i class="fa-brands fa-square-facebook fa-xs me-2"></i><i class="fa-brands fa-xs fa-linkedin"></i></div>
-				</div>
-			</div>
-		</div>
-		<!-- place navbar here -->
-		<nav class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img src="./assets/img/iCETlogo.png" class="px-2" width="80px" alt=""> </a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a><span class="hover"></span>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a><span class="hover"></span>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Pricing</a><span class="hover"></span>
-						</li>
-					</ul>
-					<span class="navbar-text">
-					</span>
-				</div>
-			</div>
-		</nav>
-
-	</header>
+<?php
+ include_once './nav.php';
+?>
 	<carousel>
 		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
@@ -342,27 +295,9 @@
 	<footer>
 		<!-- place footer here -->
 	</footer>
-	<!-- Bootstrap JavaScript Libraries -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script>
-		$("li").hover(
-			function() {
-				$(this).find("span").stop().animate({
-					width: "100%",
-					opacity: "1",
-				}, 400, function() {})
-			},
-			function() {
-				$(this).find("span").stop().animate({
-					width: "0%",
-					opacity: "0",
-				}, 400, function() {})
-			}
-		);
-	</script>
+	<?php
+ include_once './footer.php';
+	?>
 </body>
 
 </html>
